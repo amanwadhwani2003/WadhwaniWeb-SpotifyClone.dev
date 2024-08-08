@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+</head>
+
+<body class="flex">
+    <div class="left">
+        <nav class="left-nav">
+            <ul class="left-nav-list">
+                <li class="flex"><img src="logo.svg" alt="" class="invert"> <img src="close-logo.svg" class="close-logo"
+                        alt="" style="filter: invert();"></li>
+                <li><img src="home-logo.svg" alt="" class="all-logos invert"><span>Home</span></li>
+                <li><img src="search-icon.svg" alt="" class="all-logos invert"><span
+                        style="color: #7e7e7e;">Search</span></li>
+            </ul>
+        </nav>
+        <section class="library-section">
+            <div class="flex library-container">
+                <span class="library-heading">
+                    <img src="library-logo.svg" alt="Library" class="all-logos invert">
+                    <span>Your Library</span>
+                </span>
+                <button class="library-plus"><img src="plus-logo.svg" alt=""></button>
+            </div>
+            <div class="library-boxes">
+                <div class="create flex">
+                    <span class="create-heading" style="font-size: 16px; font-weight: 500;">Create your first
+                        playlist</span>
+                    <span class="create-content" style="color: #c9c9c9; font-size: 16px;">It’s easy, we’ll help
+                        you</span>
+                    <button class="create-button">Create playlist</button>
+                </div>
+                <div class="find flex">
+                    <span class="find-heading" style="font-size: 16px; font-weight: 500;">Let’s find some podcasts to
+                        follow</span>
+                    <span class="find-content" style="color: #c9c9c9; font-size: 16px;">We’ll keep you updated on new
+                        episodes</span>
+                    <button class="find-button">Browse podcasts</button>
+                </div>
+            </div>
+            <div class="left-footer flex">
+                <a class="left-footer-content left-footer-content-1" href="">Legal</a>
+                <a class="left-footer-content left-footer-content-2" href="">Safety & Privacy Center</a>
+                <a class="left-footer-content left-footer-content-3" href="">Privacy Policy</a>
+                <a class="left-footer-content left-footer-content-4" href="">Cookies</a>
+                <a class="left-footer-content left-footer-content-5" href="">About Ads</a>
+                <a class="left-footer-content left-footer-content-6" href="">Accessibility</a>
+                <a class="left-footer-content left-footer-content-7" href="">Cookies</a>
+            </div>
+            <button class="language-button flex"><img src="world-logo.svg" alt="" class="all-logos invert"
+                    style="width: 18px; height: auto;">English</button>
+        </section>
+    </div>
+
+    <div class="right">
+        <header class="right-header">
+            <ul class="right-header-list flex">
+                <li class="first flex">
+                    <button class="hamburger-button"><img src="hamburger-logo.svg" alt=""
+                            style="filter: invert();"></button>
+                    <button class="left-facing-button"><img src="left-arrow-logo.svg" alt=""></button>
+                    <button class="right-facing-button"><img src="right-arrow-logo.svg" alt=""></button>
+                </li>
+                <li class="second flex">
+                    <button class="signup-button">Sign up</button>
+                    <button class="login-button">Log in</button>
+                </li>
+            </ul>
+        </header>
+        <section class="playlist-section">
+            <h1 class="spotify-songs-heading">Spotify songs</h1>
+            <div id="contains-cards" class="card-container flex">
+                <!-- <div class="card flex">
+                    <div class="image-div">
+                        <img src="" alt="" class="song-image">
+                        <button class="play-button">
+                            <img src="play-button-logo.svg" alt="">
+                        </button>
+                    </div>
+                    <span class="playlist-heading">Dinner with Friends</span>
+                    <span class="playlist-content">The perfect soundtrack to those long nights over dinner</span>
+                </div> -->
+            </div>
+        </section>
+        <div class="playbar">
+            <div class="above-playbar">
+                <div class="song-display-name"></div>
+                <div class="command-buttons">
+                    <button class="previous-playbar-button"><img src="previous-icon.svg" alt=""
+                            class="previous-playbar-image"></button>
+                    <button class="play-playbar-button"><img src="play-button-logo.svg" alt=""
+                            class="play-playbar-image"></button>
+                    <button class="next-playbar-button"><img src="next-icon.svg" alt=""
+                            class="next-playbar-image"></button>
+                </div>
+                <div class="song-display-duration"></div>
+                <div class="volume flex">
+                    <img src="volume-logo.svg" alt="">
+                    <input class="input" type="range" name="volume-input" value=2000
+                        style="width: 70px; height: 5px; accent-color: black;">
+                </div>
+            </div>
+            <div class="seekbar">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

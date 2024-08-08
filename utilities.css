@@ -1,0 +1,47 @@
+/* Custom scrollbar styles for WebKit browsers */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    /* Dark background for the track */
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3a3a3a;
+    /* Darker gray handle */
+    border-radius: 10px;
+    border: 2px solid #1e1e1e;
+    /* Matching the track background to create space around the thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Slightly lighter gray on hover */
+}
+
+/* Scrollbar for Firefox
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #3a3a3a #1e1e1e;
+} */
+
+/* Scrollbar for Edge, IE, and older versions of Firefox */
+body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /* For older versions of IE and Edge */
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.flex {
+    display: flex;
+}
